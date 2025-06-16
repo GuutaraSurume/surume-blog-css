@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
+
+/* ▼▼▼ この記事のスタイルは、すべて .surume-post の中に閉じ込めます ▼▼▼ */
+.surume-post {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  line-height: 1.8;
+  color: #4a4a4a;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0e4d7;
+}
+
+.surume-post h1 {
+  font-size: 2em;
+  color: #d35400; /* ポメグラネット的なオレンジ */
+  border-bottom: 3px dashed #f39c12; /* するめっぽいオレンジ */
+  padding-bottom: 10px;
+  margin-top: 20px;
+  line-height: 1.4;
+}
+
+.surume-post h2 {
+  font-size: 1.6em;
+  color: #2c3e50; /* ミッドナイトブルー */
+  border-left: 10px solid #f39c12;
+  padding-left: 15px;
+  margin-top: 60px;
+}
+
+.surume-post h2::before {
+  content: "🍶 ";
+}
+
+.surume-post h3 {
+  font-size: 1.3em;
+  color: #34495e; /* ウェットアスファルト */
+  margin-top: 40px;
+  border-bottom: 1px solid #bdc3c7;
+  padding-bottom: 5px;
+}
+
+.surume-post h4 {
+  font-size: 1.1em;
+  color: #c0392b; /* 赤っぽいオレンジ */
+  margin-top: 30px;
+  background-color: #fff3e0;
+  padding: 8px 15px;
+  border-radius: 8px;
+  border-left: 5px solid #e67e22;
+}
+
+.surume-post p {
+  margin: 15px 0;
+}
+
+.surume-post strong {
+  color: #c0392b; /* ポインテッドな赤 */
+  font-weight: 700;
+}
+
+.surume-post a {
+  color: #2980b9; /* ベルヴューブルー */
+  text-decoration: none;
+  border-bottom: 1px dotted #2980b9;
+}
+
+.surume-post a:hover {
+  color: #3498db; /* ピーターリバー */
+}
+
+.surume-post hr {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(243, 156, 18, 0.75), rgba(0, 0, 0, 0));
+  margin: 50px 0;
+}
+
+.surume-post ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.surume-post ul li {
+  background-color: #f9f9f9;
+  padding: 12px 20px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border-left: 5px solid #1abc9c; /* ターコイズ */
+  position: relative;
+}
+
+.surume-post ul li::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%2316a085" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -1.5em;
+  top: 0.4em;
+}
+
+.surume-post blockquote {
+  border-left: 5px solid #f1c40f; /* サンフラワー */
+  background-color: #fff9e6;
+  margin: 25px 0;
+  padding: 20px;
+  font-size: 1.1em;
+  font-weight: 700;
+  border-radius: 0 8px 8px 0;
+}
+
+.surume-post blockquote strong {
+  color: #d35400;
+}
+
+.surume-post table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.surume-post th, .surume-post td {
+  border: 1px solid #e0e0e0;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.surume-post th {
+  background-color: #34495e;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.surume-post tr:nth-child(even) {
+  background-color: #f7f9f9;
+}
+
+.surume-post em {
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+.surume-post .final-cheers {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #eafaf1;
+  border-radius: 10px;
+  border: 2px dashed #2ecc71;
+  color: #27ae60;
+}
+
+.surume-post .surume-warning-image {
+  display: block;
+  margin: 30px auto;
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 3px solid #c0392b;
+} 
