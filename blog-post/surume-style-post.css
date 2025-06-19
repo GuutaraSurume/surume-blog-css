@@ -125,6 +125,9 @@
   border-collapse: collapse;
   margin: 30px 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow-x: auto;
+  display: block;
+  white-space: nowrap;
 }
 
 .surume-post th, .surume-post td {
@@ -167,4 +170,118 @@
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   border: 3px solid #c0392b;
+}
+
+/* YouTube動画のレスポンシブ対応 */
+.surume-post iframe {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+/* ▼▼▼ スマホ対応（768px以下） ▼▼▼ */
+@media (max-width: 768px) {
+  .surume-post {
+    margin: 10px;
+    padding: 15px 20px;
+    border-radius: 10px;
+  }
+  
+  .surume-post h1 {
+    font-size: 1.6em;
+    margin-top: 10px;
+  }
+  
+  .surume-post h2 {
+    font-size: 1.4em;
+    margin-top: 40px;
+    border-left: 8px solid #f39c12;
+    padding-left: 12px;
+  }
+  
+  .surume-post h3 {
+    font-size: 1.2em;
+    margin-top: 30px;
+  }
+  
+  .surume-post h4 {
+    font-size: 1.05em;
+    padding: 6px 12px;
+  }
+  
+  .surume-post ul {
+    padding-left: 15px;
+  }
+  
+  .surume-post ul li {
+    padding: 10px 15px;
+  }
+  
+  .surume-post blockquote {
+    margin: 20px 0;
+    padding: 15px;
+    font-size: 1.05em;
+  }
+  
+  .surume-post .final-cheers {
+    font-size: 1.1em;
+    padding: 15px;
+    margin-top: 40px;
+  }
+  
+  .surume-post table {
+    font-size: 0.9em;
+  }
+  
+  .surume-post th, .surume-post td {
+    padding: 8px 10px;
+  }
+}
+
+/* ▼▼▼ 小さいスマホ対応（480px以下） ▼▼▼ */
+@media (max-width: 480px) {
+  .surume-post {
+    margin: 5px;
+    padding: 12px 15px;
+  }
+  
+  .surume-post h1 {
+    font-size: 1.4em;
+  }
+  
+  .surume-post h2 {
+    font-size: 1.3em;
+    border-left: 6px solid #f39c12;
+    padding-left: 10px;
+  }
+  
+  .surume-post h3 {
+    font-size: 1.15em;
+  }
+  
+  .surume-post ul {
+    padding-left: 10px;
+  }
+  
+  .surume-post ul li {
+    padding: 8px 12px;
+  }
+  
+  .surume-post blockquote {
+    padding: 12px;
+    font-size: 1em;
+  }
+  
+  .surume-post .final-cheers {
+    font-size: 1em;
+    padding: 12px;
+  }
+  
+  .surume-post table {
+    font-size: 0.8em;
+  }
+  
+  .surume-post th, .surume-post td {
+    padding: 6px 8px;
+  }
 } 
