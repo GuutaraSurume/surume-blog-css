@@ -285,3 +285,87 @@
     padding: 6px 8px;
   }
 } 
+
+/* ▼▼▼ 会話風記事のためのスタイル ▼▼▼ */
+
+.surume-post .conversation-block {
+  margin: 30px 0;
+}
+
+.surume-post .speech-bubble {
+  position: relative;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  max-width: 85%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.surume-post .speaker-name {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+}
+
+/* AIの発言（左側、しっぽ付き） */
+.surume-post .ai-speech {
+  background-color: #eafaf1; /* やさしい緑 */
+  border: 1px solid #c8e6c9;
+  margin-right: auto;
+}
+
+.surume-post .ai-speech .speaker-name {
+  color: #27ae60; /* 緑 */
+}
+
+.surume-post .ai-speech::before {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-right-color: #eafaf1;
+  border-left: 0;
+}
+
+
+/* 人間の発言（右側、しっぽ付き） */
+.surume-post .human-speech {
+  background-color: #fff3e0; /* やさしいオレンジ */
+  border: 1px solid #ffe0b2;
+  margin-left: auto;
+}
+
+.surume-post .human-speech .speaker-name {
+  color: #d35400; /* オレンジ */
+  text-align: right;
+}
+
+.surume-post .human-speech::after {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  right: -10px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left-color: #fff3e0;
+  border-right: 0;
+}
+
+/* 地の文（ナレーションなど） */
+.surume-post .narration {
+  font-size: 0.95em;
+  color: #7f8c8d; /* 落ち着いたグレー */
+  margin: 25px 5%;
+  padding: 15px;
+  text-align: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* ▲▲▲ 会話風記事のためのスタイル ▲▲▲ */ 
